@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82FF5822-C797-4E7E-B3FA-2E9A6B9DE181}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCP.AppFramework</RootNamespace>
+    <AssemblyName>RCP.AppFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Data\FormObjects.cs" />
+    <Compile Include="Data\Bys.cs" />
+    <Compile Include="Data\Criteria.cs" />
+    <Compile Include="Pages\CBD\ProgDirector\CBDProgDirectorPage.cs" />
+    <Compile Include="Pages\CBD\ProgDirector\Data\CBDProgDirectorPageBys.cs" />
+    <Compile Include="Pages\CBD\ProgDirector\Data\CBDProgDirectorPageCriteria.cs" />
+    <Compile Include="Pages\CBD\ProgAdmin\CBDProgAdminPage.cs" />
+    <Compile Include="Pages\CBD\ProgAdmin\Data\CBDProgAdminPageBys.cs" />
+    <Compile Include="Pages\CBD\ProgAdmin\Data\CBDProgAdminPageCriteria.cs" />
+    <Compile Include="Pages\CBD\Learner\Data\CBDLearnerPageBys.cs" />
+    <Compile Include="Pages\CBD\Learner\Data\CBDLearnerPageCriteria.cs" />
+    <Compile Include="Pages\CBD\Observer\CBDObserverPage.cs" />
+    <Compile Include="Pages\CBD\Observer\Data\CBPObserverPageBys.cs" />
+    <Compile Include="Pages\CBD\Observer\Data\CBDObserverPageCriteria.cs" />
+    <Compile Include="Pages\CBD\Learner\CBDLearnerPage.cs" />
+    <Compile Include="Pages\CBD\ProgramDean\CBDProgDeanPage.cs" />
+    <Compile Include="Pages\CBD\ProgramDean\Data\CBDProgDeanPageBys.cs" />
+    <Compile Include="Pages\CBD\ProgramDean\Data\CBDProgDeanPageCriteria.cs" />
+    <Compile Include="Pages\Diploma\FacOfMedicine\Data\DiplomaFacOfMedicinePageBys.cs" />
+    <Compile Include="Pages\Diploma\FacOfMedicine\Data\DiplomaFacOfMedicinePageCriteria.cs" />
+    <Compile Include="Pages\Diploma\FacOfMedicine\DiplomaFacOfMedicinePage.cs" />
+    <Compile Include="Pages\Diploma\DiplomaDirector\Data\DiplomaDirectorPageBys.cs" />
+    <Compile Include="Pages\Diploma\DiplomaDirector\Data\DiplomaDirectorPageCriteria.cs" />
+    <Compile Include="Pages\Diploma\DiplomaDirector\DiplomaDirectorPage.cs" />
+    <Compile Include="Pages\Diploma\ClinicalSupervisor\Data\DiplomaClinicalSupervisorPageBys.cs" />
+    <Compile Include="Pages\Diploma\ClinicalSupervisor\Data\DiplomaClinicalSupervisorPageCriteria.cs" />
+    <Compile Include="Pages\Diploma\ClinicalSupervisor\DiplomaClinicalSupervisorPage.cs" />
+    <Compile Include="Pages\Mainport\EnterCPDActivity\EnterCPDActivityPage.cs" />
+    <Compile Include="Pages\Mainport\EnterCPDActivity\Data\EnterCPDActivityPageBys.cs" />
+    <Compile Include="Pages\Mainport\EnterCPDActivity\Data\EnterCPDActivityPageCriteria.cs" />
+    <Compile Include="Pages\Mainport\MyCPDPlanning\Data\MyCPDPlanningPageBys.cs" />
+    <Compile Include="Pages\Mainport\MyCPDPlanning\Data\MyCPDPlanningPageCriteria.cs" />
+    <Compile Include="Pages\Mainport\MyCPDPlanning\MyCPDPlanningPage.cs" />
+    <Compile Include="Pages\Mainport\MyHoldingArea\Data\MyHoldingAreaPageBys.cs" />
+    <Compile Include="Pages\Mainport\MyHoldingArea\Data\MyHoldingAreaPageCriteria.cs" />
+    <Compile Include="Pages\Mainport\MyHoldingArea\MyHoldingAreaPage.cs" />
+    <Compile Include="Pages\Mainport\MyMOC\Data\MyMOCPageBys.cs" />
+    <Compile Include="Pages\Mainport\MyMOC\Data\MyMOCPageCriteria.cs" />
+    <Compile Include="Pages\Mainport\MyMOC\MyMOCPage.cs" />
+    <Compile Include="Pages\Mainport\MyDashboard\MyDashboardPage.cs" />
+    <Compile Include="Pages\Mainport\MyDashboard\Data\MyDashboardPageBys.cs" />
+    <Compile Include="Pages\Mainport\MyDashboard\Data\MyDashboardPageCriteria.cs" />
+    <Compile Include="Pages\Mainport\MyCPDActivitiesList\MyCPDActivitiesListPage.cs" />
+    <Compile Include="Pages\Mainport\MyCPDActivitiesList\Data\MyCPDActivitiesListPageBys.cs" />
+    <Compile Include="Pages\Mainport\MyCPDActivitiesList\Data\MyCPDActivitiesListPageCriteria.cs" />
+    <Compile Include="Pages\Login\Data\LoginPageBys.cs" />
+    <Compile Include="Pages\Login\Data\LoginPageCriteria.cs" />
+    <Compile Include="Pages\Login\LoginPage.cs" />
+    <Compile Include="Pages\Diploma\Assessor\Data\DiplomaAssessorPageBys.cs" />
+    <Compile Include="Pages\Diploma\Assessor\Data\DiplomaAssessorPageCriteria.cs" />
+    <Compile Include="Pages\Diploma\Assessor\DiplomaAssessorPage.cs" />
+    <Compile Include="Pages\Diploma\CredentialStaff\Data\DiplomaCredentialStaffPageBys.cs" />
+    <Compile Include="Pages\Diploma\CredentialStaff\Data\DiplomaCredentialStaffPageCriteria.cs" />
+    <Compile Include="Pages\Diploma\CredentialStaff\DiplomaCredentialStaffPage.cs" />
+    <Compile Include="Pages\Diploma\Trainee\Data\DiplomaTraineePageBys.cs" />
+    <Compile Include="Pages\Diploma\Trainee\Data\DiplomaTraineePageCriteria.cs" />
+    <Compile Include="Pages\Diploma\Trainee\DiplomaTraineePage.cs" />
+    <Compile Include="Pages\PER\Assessor\Data\PERAssessorPageBys.cs" />
+    <Compile Include="Pages\PER\Assessor\Data\PERAssessorPageCriteria.cs" />
+    <Compile Include="Pages\PER\Assessor\PERAssessorPage.cs" />
+    <Compile Include="Pages\PER\Referee\PERRefereePage.cs" />
+    <Compile Include="Pages\PER\Referee\Data\PERRefereePageBys.cs" />
+    <Compile Include="Pages\PER\Referee\Data\PERRefereePageCriteria.cs" />
+    <Compile Include="Pages\PER\CredentialStaff\Data\PERCredentialStaffPageBys.cs" />
+    <Compile Include="Pages\PER\CredentialStaff\Data\PERCredentialStaffPageCriteria.cs" />
+    <Compile Include="Pages\PER\CredentialStaff\PERCredentialStaffPage.cs" />
+    <Compile Include="Pages\PER\Trainee\PERTraineePage.cs" />
+    <Compile Include="Pages\PER\Trainee\Data\PERTraineePageCriteria.cs" />
+    <Compile Include="Pages\PER\Trainee\Data\PERTraineePageBys.cs" />
+    <Compile Include="Pages\RCPPage.cs" />
+    <Compile Include="Pages\RCPPageBys.cs" />
+    <Compile Include="Utils\Application\MainportHelperMethods.cs" />
+    <Compile Include="Utils\Application\DiplomaHelperMethods.cs" />
+    <Compile Include="Utils\Application\PERHelperMethods.cs" />
+    <Compile Include="Utils\User\UserModelObjects.cs" />
+    <Compile Include="Utils\User\UserUtils.cs" />
+    <Compile Include="Utils\DbUtils.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="Data\Constants.cs" />
+    <Compile Include="Utils\Navigation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\ThirdParty\Selenium\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\components\ThirdParty\Selenium\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\ThirdParty\Selenium\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\ThirdParty\Selenium\NUnit.3.7.1\bin\net-4.5\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\ThirdParty\Selenium\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="WebDriver, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\ThirdParty\Selenium\Selenium.WebDriver.3.6.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\ThirdParty\Selenium\Selenium.Support.3.6.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Browser.Core.Framework\Browser.Core.Framework.csproj">
+      <Project>{72867f68-8454-4f1a-8315-99e403f60bf3}</Project>
+      <Name>Browser.Core.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!--Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props'))" />
+  </Target-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
